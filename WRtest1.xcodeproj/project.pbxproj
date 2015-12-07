@@ -15,6 +15,14 @@
 		5499DEC61C0CEF5D00753201 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5499DEC41C0CEF5D00753201 /* LaunchScreen.storyboard */; };
 		5499DED11C0CEF5D00753201 /* WRtest1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499DED01C0CEF5D00753201 /* WRtest1Tests.swift */; };
 		5499DEDC1C0CEF5D00753201 /* WRtest1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499DEDB1C0CEF5D00753201 /* WRtest1UITests.swift */; };
+		5499DEEA1C0CF2B400753201 /* Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499DEE91C0CF2B400753201 /* Appointment.swift */; };
+		5499DEEC1C0CF2E100753201 /* ApptList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5499DEEB1C0CF2E100753201 /* ApptList.swift */; };
+		5499DEEE1C0CF79500753201 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEED1C0CF79400753201 /* Alamofire.framework */; };
+		5499DEF01C0CF79F00753201 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEEF1C0CF79F00753201 /* SwiftyJSON.framework */; };
+		5499DEF11C0CFF1E00753201 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEED1C0CF79400753201 /* Alamofire.framework */; };
+		5499DEF21C0CFF1E00753201 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEED1C0CF79400753201 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5499DEF41C0CFF5B00753201 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEEF1C0CF79F00753201 /* SwiftyJSON.framework */; };
+		5499DEF51C0CFF5B00753201 /* SwiftyJSON.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5499DEEF1C0CF79F00753201 /* SwiftyJSON.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,21 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		5499DEF31C0CFF1E00753201 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5499DEF51C0CFF5B00753201 /* SwiftyJSON.framework in Embed Frameworks */,
+				5499DEF21C0CFF1E00753201 /* Alamofire.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5499DEB61C0CEF5D00753201 /* WRtest1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WRtest1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5499DEB91C0CEF5D00753201 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +72,10 @@
 		5499DED71C0CEF5D00753201 /* WRtest1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WRtest1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5499DEDB1C0CEF5D00753201 /* WRtest1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WRtest1UITests.swift; sourceTree = "<group>"; };
 		5499DEDD1C0CEF5D00753201 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5499DEE91C0CF2B400753201 /* Appointment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Appointment.swift; path = ../Appointment.swift; sourceTree = "<group>"; };
+		5499DEEB1C0CF2E100753201 /* ApptList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ApptList.swift; path = ../ApptList.swift; sourceTree = "<group>"; };
+		5499DEED1C0CF79400753201 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = WRtest1.xcodeproj/Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		5499DEEF1C0CF79F00753201 /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = WRtest1.xcodeproj/Carthage/Build/iOS/SwiftyJSON.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +83,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5499DEF41C0CFF5B00753201 /* SwiftyJSON.framework in Frameworks */,
+				5499DEEE1C0CF79500753201 /* Alamofire.framework in Frameworks */,
+				5499DEF11C0CFF1E00753201 /* Alamofire.framework in Frameworks */,
+				5499DEF01C0CF79F00753201 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +110,8 @@
 		5499DEAD1C0CEF5C00753201 = {
 			isa = PBXGroup;
 			children = (
+				5499DEEF1C0CF79F00753201 /* SwiftyJSON.framework */,
+				5499DEED1C0CF79400753201 /* Alamofire.framework */,
 				5499DEB81C0CEF5D00753201 /* WRtest1 */,
 				5499DECF1C0CEF5D00753201 /* WRtest1Tests */,
 				5499DEDA1C0CEF5D00753201 /* WRtest1UITests */,
@@ -99,6 +132,8 @@
 		5499DEB81C0CEF5D00753201 /* WRtest1 */ = {
 			isa = PBXGroup;
 			children = (
+				5499DEEB1C0CF2E100753201 /* ApptList.swift */,
+				5499DEE91C0CF2B400753201 /* Appointment.swift */,
 				5499DEB91C0CEF5D00753201 /* AppDelegate.swift */,
 				5499DEBB1C0CEF5D00753201 /* MasterViewController.swift */,
 				5499DEBD1C0CEF5D00753201 /* DetailViewController.swift */,
@@ -138,6 +173,7 @@
 				5499DEB21C0CEF5C00753201 /* Sources */,
 				5499DEB31C0CEF5C00753201 /* Frameworks */,
 				5499DEB41C0CEF5C00753201 /* Resources */,
+				5499DEF31C0CFF1E00753201 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -196,6 +232,7 @@
 				TargetAttributes = {
 					5499DEB51C0CEF5C00753201 = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = 97ASU33JJP;
 					};
 					5499DECB1C0CEF5D00753201 = {
 						CreatedOnToolsVersion = 7.1;
@@ -259,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5499DEEC1C0CF2E100753201 /* ApptList.swift in Sources */,
 				5499DEBE1C0CEF5D00753201 /* DetailViewController.swift in Sources */,
 				5499DEBC1C0CEF5D00753201 /* MasterViewController.swift in Sources */,
 				5499DEBA1C0CEF5D00753201 /* AppDelegate.swift in Sources */,
+				5499DEEA1C0CF2B400753201 /* Appointment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,6 +442,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WRtest1.xcodeproj/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WRtest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itel.WRtest1;
@@ -414,6 +458,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/WRtest1.xcodeproj/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = WRtest1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.itel.WRtest1;
@@ -488,6 +537,7 @@
 				5499DEE21C0CEF5D00753201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5499DEE31C0CEF5D00753201 /* Build configuration list for PBXNativeTarget "WRtest1Tests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +546,7 @@
 				5499DEE51C0CEF5D00753201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5499DEE61C0CEF5D00753201 /* Build configuration list for PBXNativeTarget "WRtest1UITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +555,7 @@
 				5499DEE81C0CEF5D00753201 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
